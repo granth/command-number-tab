@@ -1,5 +1,4 @@
-# SCRIPTS_DIR = "#{ENV['HOME']}/Library/Scripts/Applications"
-SCRIPTS_DIR = "scripts"
+SCRIPTS_DIR = "#{ENV['HOME']}/Library/Scripts/Applications"
 
 desc "Install AppleScripts for Safari and Terminal"
 task :install => [:install_safari, :install_terminal]
