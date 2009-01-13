@@ -77,7 +77,7 @@ tab_n.map {|f| "terminal/#{f}"}.each do |f|
     compile f, <<-END
       tell application "Terminal"
         try
-          set selected of tab 1 of front window to true
+          set selected of tab #{n} of front window to true
         end try
       end tell
     END
