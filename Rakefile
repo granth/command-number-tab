@@ -15,7 +15,7 @@ def compile(file, source)
 end
 
 def hide_extension(file)
-  sh "test -e /usr/bin/SetFile && /usr/bin/SetFile -a E '#{file}'"
+  sh "test -e /usr/bin/SetFile && /usr/bin/SetFile -a E '#{file}'; true"
 end
 
 def install_scripts(app)
